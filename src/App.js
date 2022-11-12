@@ -1,9 +1,9 @@
+import { useState } from 'react'
+import FlashcardList from '../FlashcardList'
+
 function App() {
-  return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
-  )
+  const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
+  return <FlashcardList flashcards={flashcards} />
 }
 
 export default App
