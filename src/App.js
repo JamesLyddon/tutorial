@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import FlashcardList from './FlashcardList'
+import './app.css'
 
 function App() {
   const [flashcards, setFlashcards] = useState(SAMPLE_FLASHCARDS)
@@ -19,7 +20,12 @@ const SAMPLE_FLASHCARDS = [
     id: 2,
     question: 'What is your quest?',
     answer: 'I seek the Grail',
-    options: ['I seek the Grail', 'To buy 10 fags', 'A VR headset?', 'To buy a vest'],
+    options: [
+      'I seek the Grail',
+      'To buy 10 fags',
+      'A VR headset?',
+      'To buy a vest',
+    ],
   },
   {
     id: 3,
